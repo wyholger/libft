@@ -5,7 +5,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n);
 сравнивает n байт участков памяти. возвращает 0 если участки идентичны.
 возвращает 1 если встретились различающиеся байты и *s1 > *s2. иначе -1.
 
-void *ft_memcpy(void *dest, const void *src, size_t n);
+void *ft_memcpy(void *dest, const void *src, size_t n); 
 копирует n байт из src в dest. области памяти не должны перекрываться.
 
 void *ft_memmove(void *dest, const void *src, size_t n); 
@@ -15,7 +15,7 @@ void *ft_memccpy(void *dest, const void *src, int c, size_t n);
 копирует байты (не более n). может скопировать меньше n: 
 в случае если в src встретился символ c, он будет последним скопированным символом.
 
-void *ft_memchr(const void *s, int c, size_t n);
+void *ft_memchr(const void *s, int c, size_t n); 
 ищет первое вхождение символа с в область памяти s, ограниченной n байт
 возвращает указатель на искомый байт, либо NULL, если не найдено.
 
@@ -23,20 +23,20 @@ void *ft_memset(void *s, int c, size_t n);
 заполняет n байт памяти байтом с. 
 возвращает по сути тот же указатель, что получила на вход.
 
-void ft_bzero(void *s, size_t n);
+void ft_bzero(void *s, size_t n); 
 заполняет n байт памяти нулями. ничего не возвращает.
 
-void *ft_calloc(size_t nmemb, size_t size);
+void *ft_calloc(size_t nmemb, size_t size); 
 возвращает указатель на занулённую область памяти 
 (под nmemb объектов размера size каждый).
 
 int ft_atoi(const char *nptr); 
 возвращает число, вытащенное из строки.
 
-char *ft_itoa(int n);
+char *ft_itoa(int n); 
 возвращает замалоченную строку с числом n.
 
-size_t ft_strlen(const char *s);
+size_t ft_strlen(const char *s); 
 возвращает длину нуль-терминированной строки.
 
 int ft_strncmp(const char *s1, const char *s2, size_t n);
